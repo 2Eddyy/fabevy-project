@@ -1,0 +1,158 @@
+.header {
+    background-color: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    height: 70px;
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
+}
+
+.logo {
+    padding: 10px 0 0 10px;
+}
+
+.logo img {
+    width: 200px;
+    height: 50px;
+}
+
+.headerlist {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.user-icon {
+    margin-top: -5px;
+}
+
+.user-icon a {
+    color: black;
+}
+
+.header-list li a {
+    text-decoration: none;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    color: grey !important;
+}
+
+.menu-btn {
+    position: absolute;
+    right: 10px;
+    top: 8%;
+    width: 45px;
+    height: 40px;
+    background-color: transparent;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.btn-line1,
+.btn-line2,
+.btn-line3 {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(27, 39, 51);
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 576px) {
+    .logo-sec .logo {
+        padding: 10px 0;
+    }
+
+    .logo-sec .logo img {
+        width: 180px;
+    }
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .headerlist {
+        display: none;
+    }
+
+    .menu-btn {
+        top: 55%;
+    }
+
+    .left-menus {
+        display: block !important;
+    }
+}
+
+.inactive-item a {
+    color: #484343 !important;
+    cursor: pointer;
+}
+
+.active-item a {
+    background-color: #0d6efd;
+    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.left-menus {
+    display: none;
+}
+
+.sidebar {
+    margin-top: 68px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%), 0 1px 1px 0 rgb(0 0 0 / 11%);
+    z-index: 250;
+    background-color: #ffffff;
+    position: fixed;
+    width: 210px;
+    height: 100vh;
+    padding-top: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-out;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.leftmenu-list li {
+    list-style: none;
+    line-height: 2.5em;
+    font-size: 18px;
+}
+
+.leftmenu-list li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.leftmenu-list .left-icon {
+    color: #670099;
+    width: 2rem !important;
+
+}

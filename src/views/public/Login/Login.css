@@ -1,0 +1,208 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800'); */
+
+.login-page {
+    font-size: 14px;
+    color: #666666;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.login-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 0 5px #999999;
+    border-radius: 5px;
+
+}
+
+.login .col-left,
+.login .col-right {
+    padding: 30px;
+    display: flex;
+
+}
+
+.login .col-left {
+    width: 60%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background-color: #670099;
+    border-radius: 5px 0 0 0;
+
+}
+
+@media(max-width:575px) {
+    .login .login-container {
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .login .col-left,
+    .login .col-right {
+        width: 100%;
+        margin: 0;
+        clip-path: none;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        border-radius: 0 !important;
+    }
+
+    .login .col-right {
+        padding: 30px;
+    }
+
+    .login .login-form button .login,
+    .login-form input[type=submit] {
+        color: #ffffff !important;
+        background-color: #670099 !important;
+    }
+
+}
+
+.login .login-text {
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+}
+
+.login .login-text h2 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login .login-text p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.login .login-text .signup-btn {
+    display: inline-block;
+    font-family: poppines;
+    padding: 7px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ffffff;
+    outline: none;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    transition: .3s;
+}
+
+.login .login-text .signup-btn:hover {
+    color: #670099;
+    box-shadow: inset 150px 0 0 0 #ffffff;
+}
+
+.login .login-form {
+    position: relative;
+    width: 100%;
+
+}
+
+.login .login-form h2 {
+    margin: 0 0 15px 0;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.login .login-form div {
+    margin: 0 0 10px 0;
+    text-align: left;
+    color: #666666;
+    font-size: 15px;
+}
+
+.login .login-form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+    letter-spacing: .5px;
+}
+
+.login .login-form label span {
+    color: #ff574e;
+    padding-left: 2px;
+
+}
+
+.login .login-form input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.login .login-form input:focus {
+    border-color: rgb(142, 201, 248);
+}
+
+.login .login-form button .login,
+.login-form input[type=submit] {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    color: #670099;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #670099;
+    transition: .3s;
+    font-family: Montserrat;
+}
+
+.login .login-form button:hover,
+.login .login-form input[type=submit]:hover {
+    color: #ffffff;
+    box-shadow: inset 250px 0 0 0 #670099;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: #670099;
+}
+
+.forgot {
+    margin-top: 20px !important;
+}
+
+.text-danger {
+    color: #ff574e;
+    margin-top: 0;
+}
+.form-check-input{
+    width: 0% !important;
+    height: 20px !important;
+    cursor: pointer;
+}
+.form-check-label{
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.form-check-input:focus{
+    box-shadow: none !important;
+}

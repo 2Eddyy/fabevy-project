@@ -1,0 +1,45 @@
+.main-body {
+    padding-top: 80px;
+    height: 93vh;
+}
+
+.home-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+li:hover {
+    cursor: pointer;
+}
+
+.home-card li {
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.home-card li a {
+    text-decoration: none;
+}
+
+.cards:hover {
+    background-color:#670099!important;
+    color: #ffffff;
+}
+.cards{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 576px) {
+    .home-card {
+        display: block !important;
+        flex-wrap: nowrap;
+    }
+    .main-body{
+        height: 82vh;
+    }
+}
+.home-icon{
+    font-size: 50px !important;
+}
